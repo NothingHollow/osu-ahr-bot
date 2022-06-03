@@ -13,7 +13,6 @@ export class StatSaver extends LobbyPlugin {
   private async saveStat(player: Player, score: number, passed: boolean): Promise<void> {
 
     const user = await UserSchema.findOne({ User: player.id });
-    console.log(passed);
 
     if (user) {
       user.score += score;
