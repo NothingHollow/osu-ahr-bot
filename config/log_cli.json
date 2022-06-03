@@ -1,0 +1,109 @@
+{
+  "appenders": {
+    "console": {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%[[%d{hh:mm:ss.SSS}][%p] %c -%] %m"
+      }
+    },
+    "console_f": {
+      "type": "logLevelFilter",
+      "level": "info",
+      "appender": "console"
+    },
+    "file_irc": {
+      "type": "file",
+      "maxLogSize": "2M",
+      "filename": "logs/irc.log"
+    },
+    "file_ahr_f": {
+      "type": "logLevelFilter",
+      "level": "info",
+      "appender": "file_ahr"
+    },    
+    "file_ch": {
+      "type": "multiFile",
+      "base": "logs/channels",
+      "property": "channel",
+      "extension": ".log"
+    },
+    "file_ch_f": {
+      "type": "logLevelFilter",
+      "level": "info",
+      "appender": "file_ch"
+    },    
+    "file_chat": {
+      "type": "multiFile",
+      "base": "logs/channels",
+      "property": "channel",
+      "extension": "_chat.log"
+    },
+    "file_chat_f": {
+      "type": "logLevelFilter",
+      "level": "info",
+      "appender": "file_chat"
+    },
+    "file_pm": {
+      "type": "file",
+      "filename": "logs/pm.log"
+    },
+    "file_counter": {
+      "type": "file",
+      "filename": "logs/ct.log"
+    },
+    "file_webapi": {
+      "type": "file",
+      "filename": "logs/webapi.log"
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "console_f",
+        "file_ch"
+      ],
+      "level": "all"
+    },
+    "irc": {
+      "appenders": [
+        "console_f",
+        "file_irc"
+      ],
+      "level": "all"
+    },
+    "chat": {
+      "appenders": [
+        "console_f",
+        "file_chat"
+      ],
+      "level": "all"
+    },
+    "inout": {
+      "appenders": [
+        "console",
+        "file_chat"
+      ],
+      "level": "all"
+    },
+    "pm": {
+      "appenders": [
+        "console_f",
+        "file_pm"
+      ],
+      "level": "all"
+    },
+    "wcounter": {
+      "appenders": [
+        "file_counter"
+      ],
+      "level": "off"
+    },
+    "webapi": {
+      "appenders": [
+        "file_webapi"
+      ],
+      "level": "off"
+    }
+  }
+}
