@@ -1,0 +1,132 @@
+{
+    "irc": {
+        "server": "irc.ppy.sh",
+        "nick": "Ansonseti",
+        "opt": {
+            "port": 6667,
+            "password": "bafd1938"
+        }
+    },
+    "Lobby": {
+        "authorized_users": [],
+        "listref_duration_ms": 1000,
+        "info_message": "[ --Enjoy playing osu!-- ] | - Join our Discord Server -> discord.gg/w7csw26Dns!",
+        "info_message_cooltime_ms": 60000,
+        "stat_timeout_ms": 5000,
+        "info_message_announcement_interval_ms": 0,
+        "transferhost_timeout_ms": 5000
+    },
+    "AfkKicker": {
+        "enabled": true,
+        "threshold": 6,
+        "cooltime_ms": 30000
+    },
+    "AutoHostSelector": {
+        "show_host_order_after_every_match": true,
+        "host_order_chars_limit": 90,
+        "host_order_cooltime_ms": 15000,
+        "deny_list": []
+    },
+    "AutoStartTimer": {
+        "enabled": false,
+        "doClearHost": false,
+        "waitingTime": 90
+    },
+    "CacheCleaner": {
+        "enabled": true,
+        "intervalMs": 86400000
+    },
+    "HistoryLoader": {
+        "fetch_interval_ms": 0
+    },
+    "HostSkipper": {
+        "vote_rate": 0.5,
+        "vote_min": 2,
+        "vote_cooltime_ms": 5000,
+        "vote_msg_defer_ms": 5000,
+        "afk_check_timeout_ms": 5000,
+        "afk_check_interval_first_ms": 45000,
+        "afk_check_interval_ms": 90000,
+        "afk_check_do_skip": true
+    },
+    "LobbyKeeper": {
+        "mode": null,
+        "size": 16,
+        "password": null,
+        "mods": null,
+        "hostkick_tolerance": 2,
+        "title": "1-2* osu! newbie | auto host rotate"
+    },
+    "LobbyTerminator": {
+        "terminate_time_ms": 86400000
+    },
+    "MapChecker": {
+        "enabled": true,
+        "star_min": 0,
+        "star_max": 0,
+        "length_min": 0,
+        "length_max": 0,
+        "gamemode": "osu",
+        "num_violations_allowed": 3,
+        "allow_convert": true,
+        "map_description": "[https://osu.ppy.sh/b/${map_id} ${title}] | Star Rating: ${star} | Duration: ${length} | Alternative:  [https://beatconnect.io/b/${beatmapset_id} (BeatConnect.io)] | [https://kitsu.moe/d/${beatmapset_id} (Kitsu.moe)]"
+    },
+    "MiscLoader": {},
+    "MapRecaster": {},
+    "MatchStarter": {
+        "vote_rate": 0.45,
+        "vote_min": 2,
+        "vote_msg_defer_ms": 5000,
+        "start_when_all_player_ready": true
+    },
+    "MatchAborter": {
+        "vote_rate": 0.3,
+        "vote_min": 2,
+        "vote_msg_defer_ms": 5000,
+        "auto_abort_rate": 0.5,
+        "auto_abort_delay_ms": 30000,
+        "auto_abort_do_abort": true
+    },
+    "WordCounter": {
+        "periods": [
+            {
+                "symbol": "s",
+                "duration_ms": 1000
+            },
+            {
+                "symbol": "m",
+                "duration_ms": 60000
+            }
+        ],
+        "log_interval_ms": 3600000
+    },
+    "OahrCli": {
+        "invite_users": [],
+        "password": ""
+    },
+    "WebApi": {
+        "client_id": 12935,
+        "client_secret": "LbH4i9oJ3Nyloaps7XVesqDeZ1xBKXwRbqqWd5Nx",
+        "token_store_dir": "data/tokens/",
+        "asGuest": true,
+        "callback": "",
+        "callback_port": 3000
+    },
+    "profile": {
+        "profile_expired_day": 7
+    },
+    "OahrWeb": {
+        "port": 3112,
+        "staticDir": "src/web/statics",
+        "hostname": "127.0.0.1"
+    },
+    "LogServer": {
+        "port": 3115
+    },
+    "Discord": {
+        "token": "OTQ1OTEyMjE0Njg1MDkzOTU5.GvjlLP.hV6eFItKi9tK4BDBxuuyHXIf0Wzb9xqoWNyIXI"
+    },
+    "Database": {
+        "uri": "mongodb+srv://osu:U06jpEGbAqvdtoAN@database.v7uof.mongodb.net/osu?retryWrites=true&w=majority"
+    }
+}

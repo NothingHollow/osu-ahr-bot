@@ -92,5 +92,5 @@ data/
 irc-log/
 config/development.json
 config/production.json
-config/local*
+# config/local*
 nohup.out
