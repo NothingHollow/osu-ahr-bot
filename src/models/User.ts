@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose';
 
 const UserSchema = new Schema({
-  User: String,
+  User: Number,
   score: Number,
   playTime: Number,
   playCount: Number,

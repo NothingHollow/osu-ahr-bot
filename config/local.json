@@ -55,17 +55,17 @@
         "password": null,
         "mods": null,
         "hostkick_tolerance": 2,
-        "title": "1-2* osu! newbie | auto host rotate"
+        "title": "1-2.99* osu! newbie | auto host rotate"
     },
     "LobbyTerminator": {
         "terminate_time_ms": 86400000
     },
     "MapChecker": {
         "enabled": true,
-        "star_min": 0,
-        "star_max": 0,
-        "length_min": 0,
-        "length_max": 0,
+        "star_min": 1,
+        "star_max": 2.99,
+        "length_min": 30,
+        "length_max": 300,
         "gamemode": "osu",
         "num_violations_allowed": 3,
         "allow_convert": true,
